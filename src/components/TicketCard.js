@@ -10,7 +10,7 @@ const TicketCard = ({color, ticket}) => {
     return (
         <div className="ticket-card">
 
-            <Link>
+            <Link to={`/ticket/${ticket.documentId}`} id="link">
                 <div className="ticket-color"></div>
                 <h3>{ticket.title}</h3>
                 <AvatarDisplay/>
