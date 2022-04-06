@@ -41,7 +41,7 @@ const Dashboard = () => {
     ]
 
     const uniqueCategories = [
-        ...new Set(tickets?.map(({ category}) => category))
+        ...new Set(tickets?.map(({category}) => category))
     ]
 
     return (
@@ -62,11 +62,11 @@ const Dashboard = () => {
                         }
                         <div/>
                     </div>
-                    ))
+                ))
                 }
             </div>
         </div>
     )
-   }
+}
 
-    export default Dashboard
+export default Dashboard
